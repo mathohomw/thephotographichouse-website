@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <img src="img/logo2.png" alt="rangi" style="width:120px; height:60px">
+            
+            <ul class="nav__menu">
+                <div class="nav__item-primary">
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li> 
+                    <li class="nav__item"><a href="/portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="/pricing.html" class="nav__link">Pricing</a></li>
+                </div> 
+                <div class="nav__menu-secondary">
+                    <li class="nav__item"><a href="/booking.html" class="nav__link nav__btn">Booking</a></li>
+                </div>
+            </ul>
+            
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="book">
+            <div class="booking container">
+                <div class="booking__header">Book us</div>
+                <form action="#" method="post">
+                    <div class="form__group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" id="phone" name="phone" placeholder="phone number" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" id="location" name="location" placeholder="Location" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="date" id="date" name="date" placeholder="Date" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="time" id="time" name="time" placeholder="Time" required>
+                    </div>
+                    <div class="form__group">
+                        <select name="event" id="event" required>
+                            <option value="" disabled selected>Type of Event</option>
+                            <option value="party">Party</option>
+                            <option value="lobola">Lobola</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="photoshoot">Photoshoot</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="message" name="message" rows="4" placeholder="Additional Message"></textarea>
+                    </div>
+                    <button type="submit" class="book-btn">Book Now</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-section-header">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-section-header">Contact Us</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-section-header">Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/3080f26ab8.js" crossorigin="anonymous"></script>
+    <script src="booking.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
+
+
