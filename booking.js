@@ -16,6 +16,10 @@ document.getElementById('event').addEventListener('change', function() {
 //     }
 // });
 
+var bookingLink = document.getElementById('bookingLink');
+
+// Set the href attribute dynamically
+bookingLink.href = '/booking.html';
 
  // Initialize and add the map
  function initMap() {
